@@ -4,8 +4,6 @@ public class Taxi {
     private static long taxiCount = 0;
     private final long taxiId;
     private char currentLocation;
-    private char pickUpPoint;
-    private char dropPoint;
     private int freeTime;
     private int totalEarning;
 
@@ -14,22 +12,6 @@ public class Taxi {
         this.freeTime = 6;
         this.taxiId = ++taxiCount;
         this.totalEarning = 0;
-    }
-
-    public char getPickUpPoint() {
-        return pickUpPoint;
-    }
-
-    public void setPickUpPoint(char pickUpPoint) {
-        this.pickUpPoint = pickUpPoint;
-    }
-
-    public char getDropPoint() {
-        return dropPoint;
-    }
-
-    public void setDropPoint(char dropPoint) {
-        this.dropPoint = dropPoint;
     }
 
     public long getTaxiId() {

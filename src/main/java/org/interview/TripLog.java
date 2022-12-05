@@ -19,10 +19,6 @@ public class TripLog {
         this.dropLocation = dropLocation;
     }
 
-    public long getTripNumber() {
-        return tripNumber;
-    }
-
     public int getEarning() {
         int distanceBetweenPickUpAndDrop = Math.abs((this.pickUpLocation - '0') - (this.dropLocation - '0')) * 15;
         earning = ((distanceBetweenPickUpAndDrop - 5) * 10) + 100;
